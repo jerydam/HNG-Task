@@ -1,15 +1,61 @@
-/* Add your custom CSS styles here */
+/* Reset some default styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
 .container {
     text-align: center;
-    margin: 50px;
+    margin: 50px auto;
+    max-width: 400px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
 }
 
 img {
-    max-width: 200px;
+    max-width: 100%;
     height: auto;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 15px;
 }
 
 a {
     text-decoration: none;
     color: #007BFF;
+    font-weight: bold;
+    display: block;
+    margin-top: 20px;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+/* Style the GitHub link like a button */
+a[data-testid="githubURL"] {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+a[data-testid="githubURL"]:hover {
+    background-color: #0056b3;
 }
